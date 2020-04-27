@@ -6,29 +6,57 @@
     <title>Build a Tribute Page</title>
 
     <style>
+      * {
+        font-family: Helvetica, sans-serif;
+      }
+
+      #title,
+      #tribute-info,
+      #tribute-link {
+        text-align: center;
+      }
+
+      #tribute-link {
+        display: block;
+      }
+
+      #tribute-info {
+        margin: 32px 0;
+      }
+
       #img-div {
         display: grid;
+        justify-items: center;
       }
 
       #image {
         height: auto;
-        justify-self: center;
         max-width: 100%;
       }
     </style>
   </head>
   <body>
     <div id="main">
-      <h1 id="title">Title</h1>
+      <h1 id="title">Kittens</h1>
 
       <div id="img-div">
         <img src="http://placekitten.com/300/300" alt="Kitten" id="image" />
-        <figcaption id="img-caption">Caption</figcaption>
+        <figcaption id="img-caption">
+          A majestic kitten poses for the camera
+        </figcaption>
       </div>
 
-      <p id="tribute-info">Tribute Info</p>
+      <p id="tribute-info">
+        Kittens are amazing. I'm not sure how to explain it so how about you
+        just cick on the link below?
+      </p>
 
-      <a href="" id="tribute-link" target="_blank">link</a>
+      <a
+        href="https://en.wikipedia.org/wiki/Kitten"
+        id="tribute-link"
+        target="_blank"
+        >More info about kittens</a
+      >
     </div>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
